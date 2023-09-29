@@ -1,0 +1,14 @@
+@use "sass:color";
+@use 'sass:math';
+
+@function rem($size) {
+    @return calc($size/ 16px) * 1rem;
+}
+
+@function em($size) {
+    @return calc($size/ 16px) * 1em;
+}
+
+@function percent($size) {
+    @return calc($size/ 16px) * 1%;
+}

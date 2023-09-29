@@ -1,0 +1,30 @@
+@import '/styles/variables';
+
+
+.select {
+    width: 15%;
+    height: rem(42px);
+    border: none;
+    background-color: var(--white);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 0 1rem;
+
+    &:focus,
+    &:hover {
+        border: none;
+        outline: none;
+    }
+}
+
+.select:after {
+    content: "\e93a";
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 8px;
+    font-family: Linearicons;
+    font-size: 12px;
+}

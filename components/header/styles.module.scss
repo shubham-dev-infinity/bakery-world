@@ -1,0 +1,67 @@
+@import '/styles/variables';
+
+.header {
+    background-color: var(--primary-color);
+    padding: rem(25px) 0;
+
+    .container {
+        max-width: 1650px;
+        display: flex;
+
+        .left_Header {
+            display: flex;
+            align-items: center;
+            font-size: 2rem;
+            flex: 1;
+        }
+
+        .center_Header {
+            flex: 3;
+
+            .search_Button {
+                height: rem(42px);
+                background-color: var(--black);
+                color: var(--white);
+            }
+        }
+
+        .right_Header {
+            flex: 1;
+
+            .header__Actions {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                a {
+                    position: relative;
+
+                    i {
+                        display: none;
+                        position: absolute;
+                        bottom: -10px;
+                        right: 0
+                    }
+                }
+
+                .auth {
+                    display: flex;
+                    align-items: center;
+                    gap: .5rem;
+
+                    .user_Action {
+                        display: flex;
+                        flex-direction: column;
+
+                        a {
+                            cursor: pointer !important; 
+                            &:hover {
+                                opacity: .8;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

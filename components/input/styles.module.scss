@@ -1,0 +1,17 @@
+@import '/styles/variables';
+
+@import '/styles/variables';
+
+.input {
+    height: rem(42px);
+    border: none;
+    outline: none;
+    border-left: 1px solid var(--light-grey);
+    padding: 0 1rem;
+    width: 65%;
+
+    // &:hover,
+    // &:focus {
+    //     border: none
+    // }
+}
