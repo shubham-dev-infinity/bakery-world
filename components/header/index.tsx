@@ -10,7 +10,7 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons"
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons/faCartShopping"
 import { faCircleUser } from "@fortawesome/free-solid-svg-icons/faCircleUser"
 import Link from "next/link"
-
+import Navigation from "../navigation"
 
 const categoryOptions = [
     {
@@ -65,6 +65,7 @@ const Header = () => {
                     </section>
                 </Container>
             </header >
+            <Navigation />
         </>)
 }
 
